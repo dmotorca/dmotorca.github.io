@@ -1,17 +1,28 @@
+body {
+  background-color: blueviolet !important;
+}
+
+.topNav {
+  background-color: gray;
+  width: 100%;
+}
+
 .topNav-list {
-  display: inline-block;
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  justify-content: center;
+  margin-bottom: 0;
 }
 
 .topNav-link {
+  background-color: aquamarine;
   list-style: none;
-  float: left;
+  padding: 50px;
 }
 
 .topNav-link a {
-  background-color: aquamarine;
-  float: left;
   color: black;
-  padding: 30px;
   text-decoration: none;
   font-size: 2em;
 }
@@ -20,4 +31,8 @@
 }
 
 .topNav-link a.active {
+}
+
+#aboutSection {
+  font-size: 30px;
 }
