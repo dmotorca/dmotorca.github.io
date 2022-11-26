@@ -1,10 +1,10 @@
 body {
-  background-color: blueviolet !important;
 }
 
 .topNav {
   background-color: gray;
   width: 100%;
+  /* position: fixed; Makes navbar sticky but also covers some of the first content*/
 }
 
 .topNav-list {
@@ -27,16 +27,10 @@ body {
   font-size: 2em;
 }
 
-p {
-  font-size: 30px;
+.container {
 }
 
-.item1 {
-  margin-left: 50px;
-  margin-right: 30px;
-  font-size: 15px;
-  letter-spacing: 2px;
-}
-
-.item2 {
+div {
+  font-size: 40px;
+  letter-spacing: 4px;
 }
