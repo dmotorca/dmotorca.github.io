@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Website Portfolio</title>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="../styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -20,7 +21,6 @@
   <body class="p-3 mb-2 bg-dark text-white">
     <nav class="topNav">
       <ul class="topNav-list">
-        <li class="topNav-link"><a href="#homeSection">Home</a></li>
         <li class="topNav-link">
           <a href="#aboutSection">About</a>
         </li>
@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col" id="aboutSection">
-          <h1>About Me</h1>
+          <h1 id="topTag">About Me</h1>
           <p>
             I am David Motorca and I prefer the pronouns he/him. I have been at
             PSU since 2019 and will hopefully be graduating this year. My
@@ -51,16 +51,12 @@
             got to fully incorporate changes with the exact vision that I had.
             In addition, the application was launched on a linux system which
             was another challenge but is now ultimately a strength of mine as I
-            am very comfortable developing on linux. I am never really sure on
-            how to talk about my hobbies. I don't really have any unique hobbies
-            which makes it difficult for me to share what I like to do without
-            sounding like everyone else(which is not really a problem it just
-            feels a little bland). I am looking forward to go skiing on Mount
-            Hood this upcoming winter. During the summer months I really enjoy
-            going on overnight backpacking trips. I also really enjoy playing
-            video games whenever I have free time. I am currently playing
-            Overwatch2 and I am looking forward to the release of God of War
-            Ragnarok.
+            am very comfortable developing on linux. I am looking forward to go
+            skiing on Mount Hood this upcoming winter. During the summer months
+            I really enjoy going on overnight backpacking trips. I also really
+            enjoy playing video games whenever I have free time. I am currently
+            playing Overwatch2 and I am looking forward to the release of God of
+            War Ragnarok.
           </p>
           <img
             id="headshot"
@@ -73,7 +69,7 @@
 
         <div class="row">
           <div class="col" id="previousSection">
-            <h1>Previous Work</h1>
+            <h1 id="topTag">Previous Work</h1>
             <p>
               TigerStop is a company that specializes in creating machines and
               devices to simplfy work and reduce the amount of waste from
@@ -93,7 +89,7 @@
         </div>
 
         <div class="row" id="projectsSection">
-          <h1>Projects</h1>
+          <h1 id="topTag">Projects</h1>
           <div class="card" style="width: 16rem">
             <img
               src="../images/package.jpg"
@@ -104,10 +100,17 @@
             />
             <div class="card-body">
               <p class="card-text">
-                Created a package tracking application that stores various
-                client information and the type of delivery method the package
-                will be using
+                Created a package tracking application in C++ that stores
+                various client information and the type of delivery method the
+                package will be using
               </p>
+              <div class="d-grid gap-2">
+                <a
+                  href="https://github.com/dmotorca/CS202---Package-Tracker"
+                  class="btn btn-primary stretched-link"
+                  >Project Link</a
+                >
+              </div>
             </div>
           </div>
           <div class="card" style="width: 16rem">
@@ -120,9 +123,17 @@
             />
             <div class="card-body">
               <p class="card-text">
-                Created a provider terminal for insurance companies to quickly
-                and efficiently bill and store patient information securly.
+                Created a provider terminal in C++ that was for insurance
+                companies to quickly and efficiently bill and store patient
+                information securly.
               </p>
+              <div class="d-grid gap-2">
+                <a
+                  href="https://github.com/dmotorca/ChocAn"
+                  class="btn btn-primary stretched-link"
+                  >Project Link</a
+                >
+              </div>
             </div>
           </div>
           <div class="card" style="width: 16rem">
@@ -137,8 +148,15 @@
               <p class="card-text">
                 Created a chatroom application that supported chatting between
                 multiple users in addition to basic commands such as private
-                message, kick, and ban.
+                message, kick, and ban
               </p>
+              <div class="d-grid gap-2">
+                <a
+                  href="https://github.com/dmotorca/CS-494ChatRoom"
+                  class="btn btn-primary stretched-link"
+                  >Project Link</a
+                >
+              </div>
             </div>
           </div>
           <div class="card" style="width: 16rem">
@@ -151,14 +169,22 @@
             />
             <div class="card-body">
               <p class="card-text">
-                Created a type racing game that gave a prompt to the user that
-                tested the correctness and speed of the user in C.
+                Created a type racing game in C that gave a prompt to the user
+                that tested the correctness and speed of the user and then gave
+                them a final score
               </p>
+              <div class="d-grid gap-2">
+                <a
+                  href="https://github.com/dmotorca/Typing-Game-in-C"
+                  class="btn btn-primary stretched-link"
+                  >Project Link</a
+                >
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <h1>Contact Form</h1>
+          <h1 id="lastTag">Contact Form</h1>
           <div
             class="col bg-light border rounded w-50 mx-auto mt-5 p-3"
             id="contactSection"
