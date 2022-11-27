@@ -16,9 +16,16 @@ body {
 }
 
 .topNav-link {
-  background-color: aquamarine;
+  background-color: gray;
   list-style: none;
   padding: 50px;
+}
+
+#headshot {
+  border-radius: 50%;
+}
+label {
+  color: black;
 }
 
 .topNav-link a {
@@ -27,7 +34,8 @@ body {
   font-size: 2em;
 }
 
-.card {
+.card-text {
+  color: black;
 }
 
 div {
