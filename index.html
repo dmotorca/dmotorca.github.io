@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-info">
+  <body class="p-3 mb-2 bg-dark text-white">
     <nav class="topNav">
       <ul class="topNav-list">
         <li class="topNav-link"><a href="#homeSection">Home</a></li>
@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col" id="aboutSection">
-          <h2>HELLO ALL</h2>
+          <h1>About Me</h1>
           <p>
             I am David Motorca and I prefer the pronouns he/him. I have been at
             PSU since 2019 and will hopefully be graduating this year. My
@@ -72,6 +72,7 @@
 
         <div class="row">
           <div class="col" id="previousSection">
+            <h1>Previous Work</h1>
             <p>TigerStop - SawGear2 Team - Summer 2022</p>
             <img
               src="../images/SawGear_US-Still-13.jpg"
@@ -83,13 +84,58 @@
         </div>
 
         <div class="row">
-          <div class="col" id="projectsSection">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-              perferendis, aperiam exercitationem nulla rem dignissimos dolorem?
-              Consequatur inventore excepturi distinctio iste maiores, tempora
-              ex iusto nihil tenetur perferendis corrupti sint.
-            </p>
+          <h1>Projects</h1>
+
+          <div class="card" style="width: 16rem">
+            <img
+              src="../images/tigerstop_logo.jpg"
+              width="350px"
+              height="175px"
+              class="card-img-top"
+              alt="Logo of the company TigerStop which specializes in accurate cutting and measuring of material"
+            />
+            <div class="card-body">
+              <p class="card-text">TIGERSTOP STUFF</p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem">
+            <img
+              src="../images/choc_image.jpg"
+              width="350px"
+              height="175px"
+              class="card-img-top"
+              alt="Picture of ChocAn Anonymous Project, which is a provider terminal for insurance billing"
+            />
+            <div class="card-body">
+              <p class="card-text">CHOCAN STUFF</p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem">
+            <img
+              src="../images/chatroom_python.png"
+              class="card-img-top"
+              width="350px"
+              height="175px"
+              alt="Picture of some code revolving around a chatroom application written using the langauge Python"
+            />
+            <div class="card-body">
+              <p class="card-text">PYTHON CHAT ROOM</p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem">
+            <img
+              src="../images/typing_game.webp"
+              width="350px"
+              height="175px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -97,39 +143,45 @@
             class="col bg-light border rounded w-50 mx-auto mt-5 p-3"
             id="contactSection"
           >
-            <div class="mb-3">
-              <label for="contactName" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="contactName"
-                placeholder="Name"
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="contactEmail" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="contactEmail"
-                placeholder="name@example.com"
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="contactMessage" class="form-label">Contact Me</label>
-              <textarea
-                class="form-control"
-                id="contactMessage"
-                rows="3"
-              ></textarea>
-
-              <div class="mx-auto" style="width: 200px">
-                <input type="submit" value="Submit" class="btn btn-primary" />
-                <input type="reset" value="Reset" class="btn btn-secondary" />
+            <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  placeholder="Name"
+                />
               </div>
-            </div>
+
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label"
+                  >Contact Me</label
+                >
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  rows="3"
+                ></textarea>
+
+                <div class="mx-auto" style="width: 200px">
+                  <input type="submit" value="Submit" class="btn btn-primary" />
+                  <input type="reset" value="Reset" class="btn btn-secondary" />
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

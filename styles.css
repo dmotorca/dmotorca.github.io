@@ -27,10 +27,10 @@ body {
   font-size: 2em;
 }
 
-.container {
+.card {
 }
 
 div {
-  font-size: 40px;
-  letter-spacing: 4px;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
