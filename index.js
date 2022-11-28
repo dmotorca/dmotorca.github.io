@@ -1,12 +1,10 @@
 let form = document.querySelector('form');
 
 form.onsubmit = (event) => {
-  event.preventDefault();
-
-  const submission = getFormData(event);
+  const submission = getFormData();
 };
 
-getFormData = (event) => {
+const getFormData = () => {
   let submission = {};
 
   submission.name = form.elements.contactName.value;
@@ -20,11 +18,10 @@ getFormData = (event) => {
     alert('Email must be filled out');
   } else if (submission.number == '') {
     alert('Phone number must be filled out');
-  } else if (submission.number.length != 12) {
+  } else if (submission.number.length < 12) {
     alert('Phone number must be in the format xxx-xxx-xxxx');
   } else if (submission.message == '') {
     alert('Contact Me must be filled out');
   }
-
   return submission;
 };
