@@ -14,8 +14,8 @@ getFormData = () => {
 
   if (submission.name == '') {
     alert('Name must be filled out');
-  } else if (submission.email == '' && submission.name == '') {
-    alert('Name and email must be filled out');
+  } else if (submission.email == '') {
+    alert('Email must be filled out');
   }
 
   return submission;
