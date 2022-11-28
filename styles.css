@@ -34,9 +34,12 @@ label {
   letter-spacing: 2px;
 }
 
-.topNav a:active {
-  background-color: var(--orange);
-  color: var(--black);
+.topNav-link a:hover {
+  color: orange;
+}
+
+.topNav-link a:active {
+  color: forestgreen;
 }
 
 .card-text {

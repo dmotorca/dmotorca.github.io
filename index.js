@@ -13,14 +13,15 @@ getFormData = (event) => {
   submission.email = form.elements.contactEmail.value;
   submission.message = form.elements.contactMessage.value;
   submission.number = form.elements.contactNumber.value;
-  submission.time = '${event.timeStamp}';
 
   if (submission.name == '') {
     alert('Name must be filled out');
   } else if (submission.email == '') {
     alert('Email must be filled out');
   } else if (submission.number == '') {
-    alert('Number must be filled out');
+    alert('Phone number must be filled out');
+  } else if (submission.number.length != 12) {
+    alert('Phone number must be in the format xxx-xxx-xxxx');
   } else if (submission.message == '') {
     alert('Contact Me must be filled out');
   }
